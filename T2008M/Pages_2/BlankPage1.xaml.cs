@@ -26,13 +26,20 @@ namespace T2008M.Pages_2
         {
             this.InitializeComponent();
         }
+        int index = 1;
+        List<String> DanhSach = new List<String>();
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            DanhSach.Add(inputName.Text + " - " + inputTopic.Text + " - " + inputContent.Text.Substring(0,10));
+            txtRecieved.Text += DanhSach.Last() + "\n";
+            inputTopic.Text = "";
+            inputName.Text = "";
+            inputContent.Text = "";
+            index++;
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void TextBlock_SelectionChanged(object sender, RoutedEventArgs e)
         {
 
         }
