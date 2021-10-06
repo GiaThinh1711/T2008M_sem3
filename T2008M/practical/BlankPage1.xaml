@@ -30,7 +30,6 @@
                     <TextBox x:Name="desProduct"  Grid.Column="1" Grid.Row="1" TextWrapping="Wrap" Margin="0,30,0,0"/>
                     <TextBox x:Name="imageProduct" Grid.Column="1" Grid.Row="2" TextWrapping="Wrap" Margin="0,30,0,0" />
                     <Button Grid.Column="1" Grid.Row="3"  Margin="0,30,0,0" Click="Button_Click">Order</Button>
-
                 </Grid>
                 <Grid Margin="0,100,0,0">
                     <GridView x:Name="GV" Margin="25,50,0,0">

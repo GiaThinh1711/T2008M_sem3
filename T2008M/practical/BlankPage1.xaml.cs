@@ -25,11 +25,11 @@ namespace T2008M.practical
         public BlankPage1()
         {
             this.InitializeComponent();
-            var item1 = new Models.Products { Description = "des1", Name = "name1", Image = "https://i.pinimg.com/originals/c4/b4/0d/c4b40d6c726f2d88f52a9793478fd26b.png" };
+            var item1 = new Models.Products { Description = "Description 1", Name = "Name 1", Image = "https://i.pinimg.com/originals/c4/b4/0d/c4b40d6c726f2d88f52a9793478fd26b.png" };
             GV.Items.Add(item1);
-            var item2 = new Models.Products { Description = "des2", Name = "name2", Image = "https://i.pinimg.com/originals/c4/b4/0d/c4b40d6c726f2d88f52a9793478fd26b.png" };
+            var item2 = new Models.Products { Description = "Description 2", Name = "Name 2", Image = "https://i.pinimg.com/originals/c4/b4/0d/c4b40d6c726f2d88f52a9793478fd26b.png" };
             GV.Items.Add(item2);
-            var item3 = new Models.Products { Description = "des3", Name = "name3", Image = "https://i.pinimg.com/originals/c4/b4/0d/c4b40d6c726f2d88f52a9793478fd26b.png" };
+            var item3 = new Models.Products { Description = "Description 3", Name = "Name 3", Image = "https://i.pinimg.com/originals/c4/b4/0d/c4b40d6c726f2d88f52a9793478fd26b.png" };
             GV.Items.Add(item3);
         }
         private void Button_Click(object sender, RoutedEventArgs e)
