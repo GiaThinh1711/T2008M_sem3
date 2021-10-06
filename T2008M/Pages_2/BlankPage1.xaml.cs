@@ -31,7 +31,7 @@ namespace T2008M.Pages_2
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            DanhSach.Add(inputName.Text + " - " + inputTopic.Text + " - " + inputContent.Text.Substring(0,10));
+            DanhSach.Add(inputName.Text + " - " + inputTopic.Text + " - " + inputContent.Text.Substring(0,12) + "\n" + "------------------------- ");
             txtRecieved.Text += DanhSach.Last() + "\n";
             inputTopic.Text = "";
             inputName.Text = "";

@@ -20,21 +20,16 @@ namespace T2008M.Pages
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class BlankPage1 : Page
+    public sealed partial class Homexaml : Page
     {
-        public BlankPage1()
+        public Homexaml()
         {
             this.InitializeComponent();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            string name = inputName.Text;
-            string tel = inputTel.Text;
-            string Cmt = inputCmt.Text;
-            txtName.Text = "Họ tên: " + name;
-            txtTel.Text ="Số điện thoại:" + tel;
-            txtCmt.Text ="Số CCCD: " + Cmt;
+
         }
     }
 }

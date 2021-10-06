@@ -14,36 +14,46 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using T2008M.Models;
 
+// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
-// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
-
-namespace T2008M
+namespace T2008M.Laps2
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class MainPage : Page
+    public sealed partial class Laps2 : Page
     {
-        public MainPage()
+        public Laps2()
         {
             this.InitializeComponent();
             MainFrame.Navigate(typeof(Pages.Homexaml));
         }
 
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            MainFrame.Navigate(typeof(Pages.Homexaml));
-        }
-
-        private void Button_Click_2(object sender, RoutedEventArgs e)
-        {
-            MainFrame.Navigate(typeof(Pages.BlankPage1));
-        }
-
-        private void ad_Tapped(object sender, TappedRoutedEventArgs e)
+        private void button_Tapped(object sender, TappedRoutedEventArgs e)
         {
             SP.IsPaneOpen = !SP.IsPaneOpen;
+        }
+
+        private void button_1_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            var item1 = new MenuItem() { Name = "Home", MenuPage = "home" };
+            MainFrame.Navigate(typeof(Pages.Homexaml));
+            menu.Items.Add(item1);
+        }
+
+        private void button_2_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            var item2 = new MenuItem() { Name = "Person", MenuPage = "pi" };
+            MainFrame.Navigate(typeof(Pages.BlankPage1));
+            menu.Items.Add(item2);
+        }
+
+        private void button_3_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            var item3 = new MenuItem() { Name = "Email", MenuPage = "mail" };
+            MainFrame.Navigate(typeof(Pages_2.BlankPage1));
+            menu.Items.Add(item3);
+
         }
 
         private void menu_Loaded(object sender, RoutedEventArgs e)
@@ -56,15 +66,6 @@ namespace T2008M
             menu.Items.Add(item3);
         }
 
-        private void ListViewItem_Tapped(object sender, TappedRoutedEventArgs e)
-        {
-                MenuItem selecteditem = (MenuItem)menu.SelectedItem;
-                switch (selecteditem.MenuPage)
-                {
-                    case "home": MainFrame.Navigate(typeof(Pages.Homexaml)); break;
-                    case "pi": MainFrame.Navigate(typeof(Pages.BlankPage1)); break;
-                    case "mail": MainFrame.Navigate(typeof(Pages_2.BlankPage1)); break;
-                }
-        }
+
     }
 }
