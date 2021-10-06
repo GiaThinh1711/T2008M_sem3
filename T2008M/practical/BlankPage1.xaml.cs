@@ -38,7 +38,7 @@ namespace T2008M.practical
             {
                 var name = nameProduct.Text;
                 var des = desProduct.Text;
-                var image = imageProduct.Text;
+                var image = imageProduct.Text; 
                 var item = new Models.Products() { Description = des, Name = name, Image = image };
                 GV.Items.Add(item);
                 nameProduct.Text = "";

@@ -38,7 +38,7 @@
                                 <StackPanel Margin="0,0,10,10">
                                     <Image Source="{Binding Image}" Stretch="Fill"  Width="310"/>
                                     <TextBlock Text="{x:Bind Name}"/>
-                                    <TextBlock Text="{x:Bind Description}"/>
+                                    <TextBlock Text="{x:Bind Description}" />
                                 </StackPanel>
                             </DataTemplate>
                         </GridView.ItemTemplate>
